@@ -1,0 +1,22 @@
+Gemma Notice for HomeNurse
+==========================
+
+Gemma is provided under and subject to the Gemma Terms of Use found at ai.google.dev/gemma/terms
+
+Recipients of this software distribution receive a copy of the Gemma Terms
+of Use, available at:
+
+    https://ai.google.dev/gemma/terms
+
+Use of Gemma is subject to the use restrictions set out in Section 3.2 of
+the Gemma Terms of Use and to the Gemma Prohibited Use Policy, available at:
+
+    https://ai.google.dev/gemma/prohibited_use_policy
+
+The use restrictions of Section 3.2 and the Gemma Prohibited Use Policy are
+incorporated into these terms by reference, and apply to any use of Gemma
+model files obtained through HomeNurse.
+
+Google does not sponsor, endorse, or otherwise approve of HomeNurse or this
+distribution. HomeNurse is an independent application that uses Gemma model
+files under the Gemma Terms of Use.

@@ -1,0 +1,11 @@
+# Not needed inside the runtime image.
+node_modules
+npm-cache
+.env
+data
+models-store
+test
+deploy
+README.md
+Dockerfile
+.dockerignore

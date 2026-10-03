@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- Camera capture: short-lived file in the app-private cache, deleted
+         as soon as its bytes are moved into the encrypted vault. -->
+    <cache-path name="captures" path="." />
+    <!-- User-initiated JSON export: written to cache, shared via the system
+         share sheet, readable only while the share sheet is active. -->
+    <cache-path name="exports" path="exports/" />
+</paths>

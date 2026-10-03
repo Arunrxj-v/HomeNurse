@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  HomeNurse privacy: cloud backup is disabled entirely (android:allowBackup=false).
+  This file documents the intent for any OEM/implementer that reads fullBackupContent.
+-->
+<full-backup-content>
+    <!-- Exclude everything: medical vault, database, model metadata, secure prefs. -->
+    <exclude domain="file" path="." />
+    <exclude domain="database" path="." />
+    <exclude domain="sharedpref" path="." />
+    <exclude domain="root" path="." />
+</full-backup-content>

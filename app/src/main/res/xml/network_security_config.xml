@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  HomeNurse network security configuration (applies to every build variant).
+
+  HTTPS only. Every server the app can talk to — the HomeNurse auth API and
+  the Gemma model distribution endpoint — is reached at
+  https://server.tailda589d.ts.net:8443/homenurse, the Linux HomeServer's
+  Tailscale MagicDNS name (dedicated tailnet-only serve listener), presenting
+  a publicly trusted Let's Encrypt certificate.
+  Android therefore validates the connection with normal TLS checking: no
+  custom TrustManager, no hostname-verification bypass, no pinned/self-signed
+  certificate, and no cleartext HTTP to any host, ever.
+
+  Schema (developer.android.com/privacy-and-security/security-config):
+    network-security-config : base-config? , domain-config* , debug-overrides?
+    base-config             : trust-anchors | certificateTransparency |
+                              domainEncryption  (cleartext is an ATTRIBUTE)
+    domain-config           : domain+ , trust-anchors?, pin-set?, … ,
+                              domain-config* (nesting is allowed HERE only)
+    debug-overrides         : trust-anchors?  (ONLY trust-anchors)
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false" />
+</network-security-config>

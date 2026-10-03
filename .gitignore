@@ -1,0 +1,30 @@
+# Gradle
+.gradle/
+build/
+local.properties
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Never commit model weights or downloaded artifacts
+*.litertlm
+*.task
+*.bin
+*.onnx
+*.tflite
+*.gguf
+
+# Never commit keystores or secrets
+*.jks
+*.keystore
+*.p12
+
+# Logs
+*.log
+
+# OS
+.DS_Store

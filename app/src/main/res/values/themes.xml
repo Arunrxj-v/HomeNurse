@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      Calm, high-contrast base theme for a healthcare utility.
+      The framework has no DayNight Material theme, so light/night variants
+      live in values/ and values-night/; Compose handles in-app theming.
+    -->
+    <style name="Theme.HomeNurse" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

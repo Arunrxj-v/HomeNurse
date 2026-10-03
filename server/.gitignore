@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# npm cache (see .npmrc — keeps installs working when ~/.npm is unusable)
+.npm-cache/
+
+# Secrets / local env — never commit
+.env
+.env.local
+
+# Runtime JSON database
+data/
+
+# Published model artifacts (git keeps only the seed directory)
+models-store/*
+!models-store/.gitkeep
+
+# Logs / misc
+*.log
+npm-debug.log*
+.DS_Store

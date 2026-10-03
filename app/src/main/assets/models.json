@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "defaultModelId": "homenurse-gemma-1b",
+  "models": [
+    {
+      "modelId": "homenurse-gemma-1b",
+      "displayName": "HomeNurse AI (Gemma 3 1B)",
+      "version": "1.0.0",
+      "filename": "homenurse-gemma-1b-1.0.0.litertlm",
+      "downloadUrl": "/models/1.0.0/homenurse-gemma-1b-1.0.0.litertlm",
+      "sha256": null,
+      "sizeBytes": 584417280,
+      "runtime": "litert-lm",
+      "minSdk": 26,
+      "recommendedRamBytes": 3221225472,
+      "lowEndDevice": false,
+      "licenseUrl": "https://ai.google.dev/gemma/terms",
+      "noticeUrl": "/models/1.0.0/NOTICE"
+    },
+    {
+      "modelId": "homenurse-gemma-270m",
+      "displayName": "HomeNurse AI (Gemma 3 270M, low-end devices)",
+      "version": "1.0.0",
+      "filename": "homenurse-gemma-270m-1.0.0.litertlm",
+      "downloadUrl": "/models/1.0.0/homenurse-gemma-270m-1.0.0.litertlm",
+      "sha256": null,
+      "sizeBytes": 304005120,
+      "runtime": "litert-lm",
+      "minSdk": 26,
+      "recommendedRamBytes": 2147483648,
+      "lowEndDevice": true,
+      "licenseUrl": "https://ai.google.dev/gemma/terms",
+      "noticeUrl": "/models/1.0.0/NOTICE"
+    }
+  ]
+}

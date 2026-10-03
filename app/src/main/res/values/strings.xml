@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HomeNurse</string>
+
+    <!-- Common actions -->
+    <string name="back">Back</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="add">Add</string>
+    <string name="retry">Try again</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_documents">Documents</string>
+    <string name="nav_medicines">Medicines</string>
+    <string name="nav_care_plan">Care plan</string>
+    <string name="nav_chat">Ask</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_welcome_title">Welcome to HomeNurse</string>
+    <string name="onboarding_welcome_body">Your personal health assistant. It reads your medical papers, keeps your medicines and care tasks in one place, and answers your questions — all on this phone.</string>
+    <string name="onboarding_continue">Continue</string>
+
+    <string name="onboarding_privacy_title">Your medical information stays on this phone</string>
+    <string name="onboarding_privacy_body">HomeNurse is built so that your private health data never leaves your device.</string>
+    <string name="onboarding_privacy_bullet_1">Documents are stored encrypted, inside this app only.</string>
+    <string name="onboarding_privacy_bullet_2">Your documents, medicines, care plans and chat are never uploaded anywhere.</string>
+    <string name="onboarding_privacy_bullet_3">Backups of app data are deliberately disabled.</string>
+
+    <string name="onboarding_local_title">The AI runs locally</string>
+    <string name="onboarding_local_body">HomeNurse uses a Gemma language model that runs on this phone. Once it is downloaded, everything works without internet — even in airplane mode.</string>
+    <string name="onboarding_local_bullet_1">Questions and documents are processed on this device only.</string>
+    <string name="onboarding_local_bullet_2">No medical text is ever sent to an AI service or cloud.</string>
+    <string name="onboarding_local_bullet_3">The model is downloaded once from HomeNurse\'s own server, over HTTPS, and is checksum-verified.</string>
+
+    <string name="onboarding_signin_title">Sign in or create account</string>
+    <string name="onboarding_signin_body">Sign in so HomeNurse can protect your account and deliver AI model updates. Only your account details are sent — never your medical information.</string>
+    <string name="onboarding_signin_button">Continue</string>
+    <string name="onboarding_signed_in_as">Signed in as %1$s</string>
+
+    <string name="onboarding_model_title">Set up your private AI</string>
+    <string name="onboarding_model_body">HomeNurse AI runs directly on this device. Download the model once from the HomeNurse server, verify it, and start it locally.</string>
+    <string name="onboarding_model_download">Download HomeNurse AI</string>
+    <string name="onboarding_model_resume">Resume download</string>
+    <string name="onboarding_model_pause">Pause</string>
+    <string name="onboarding_model_paused">Download paused — %1$d%% of the model is already on this device.</string>
+    <string name="onboarding_model_privacy_note">Your medical information is not uploaded to the model server.</string>
+    <string name="onboarding_model_test_note">The model was started and a real inference test passed — it can generate text on this device.</string>
+
+    <string name="onboarding_ready_title">HomeNurse is ready.</string>
+    <string name="onboarding_ready_body">Your documents, medicines, care plan and AI chat will all work on this phone without an internet connection.</string>
+    <string name="onboarding_ready_button">Open HomeNurse</string>
+
+    <!-- Model states -->
+    <string name="model_state_downloading">Downloading HomeNurse AI… %1$d%%</string>
+    <string name="model_state_downloading_short">Downloading HomeNurse AI…</string>
+    <string name="model_state_paused">Download paused.</string>
+    <string name="model_resume_download">Resume download</string>
+    <string name="model_state_verifying">Verifying model (SHA-256)…</string>
+    <string name="model_state_installing">Installing model…</string>
+    <string name="model_state_initializing">Initializing local AI and testing inference…</string>
+    <string name="model_state_ready">HomeNurse AI is ready — inference test passed.</string>
+    <string name="model_update_available">A newer model version (%1$s) is available.</string>
+    <string name="model_info_title">AI Model</string>
+    <string name="model_info_name">Gemma</string>
+    <string name="model_info_version">Version %1$s</string>
+    <string name="model_info_size">Size: %1$s</string>
+    <string name="model_error_network">The download failed — check your connection and try again.</string>
+    <string name="model_error_unauthorized">Your session has expired — sign in again to download the AI model.</string>
+    <string name="model_error_http">The download server returned an error. Try again later.</string>
+    <string name="model_error_checksum">The downloaded file failed SHA-256 verification and was deleted. Please try again.</string>
+    <string name="model_error_storage">Not enough free storage space for the model.</string>
+    <string name="model_error_device">This device does not meet the model\'s requirements.</string>
+    <string name="model_error_manifest">HomeNurse could not get the model information from its server. Check your connection and try again.</string>
+    <string name="model_error_init">The model could not be started. The file may be corrupted — try deleting and re-downloading it.</string>
+    <string name="model_error_unknown">Something went wrong during setup. Please try again.</string>
+
+    <!-- Home -->
+    <string name="home_greeting">Hello, %1$s</string>
+    <string name="home_greeting_no_name">Hello</string>
+    <string name="home_ai_ready">Local AI is ready.</string>
+    <string name="home_ai_downloading">Local AI is downloading…</string>
+    <string name="home_ai_paused">Local AI download is paused.</string>
+    <string name="home_ai_setting_up">Local AI is being set up…</string>
+    <string name="home_ai_failed">Local AI needs attention — open Settings.</string>
+    <string name="home_ai_missing">Local AI is not installed yet — finish setup.</string>
+    <string name="home_stat_documents">Documents</string>
+    <string name="home_stat_medicines">Medicines</string>
+    <string name="home_stat_tasks">Open tasks</string>
+    <string name="home_today_tasks">Today\'s care tasks</string>
+    <string name="home_no_tasks">No open care tasks right now.</string>
+    <string name="home_action_add_document">Add a medical document</string>
+    <string name="home_action_ask">Ask HomeNurse a question</string>
+    <string name="home_action_documents">My documents</string>
+    <string name="home_action_medicines">My medicines</string>
+    <string name="home_action_care_plan">My care plan</string>
+    <string name="home_pending_review_hint">%1$d extracted item(s) are waiting for your review.</string>
+
+    <!-- Documents list -->
+    <string name="documents_title">Documents</string>
+    <string name="documents_capture">Take photo</string>
+    <string name="documents_import">Import file</string>
+    <string name="documents_processing">Working on your document — everything runs on this phone…</string>
+    <string name="documents_empty">No documents yet. Take a photo or import a PDF to get started.</string>
+    <string name="documents_delete_title">Delete document?</string>
+    <string name="documents_delete_message">\"%1$s\" and everything extracted from it will be permanently deleted from this phone.</string>
+    <string name="status_processing">Processing…</string>
+    <string name="status_review">Ready for review</string>
+    <string name="status_confirmed">Confirmed</string>
+    <string name="status_analyzed">Explained by AI</string>
+    <string name="status_failed">Could not be processed</string>
+
+    <!-- Capture -->
+    <string name="capture_title">Take a photo</string>
+    <string name="capture_take_photo">Take photo</string>
+    <string name="capture_permission_needed">Camera permission is needed to photograph documents. The photo is processed entirely on this phone.</string>
+    <string name="capture_grant_permission">Grant camera permission</string>
+    <string name="capture_camera_error">The camera could not be used. You can import an existing photo or PDF instead.</string>
+
+    <!-- Document detail -->
+    <string name="document_detail_title">Document</string>
+    <string name="document_preview">Document preview</string>
+    <string name="document_review_items">Review %1$d extracted item(s)</string>
+    <string name="document_tab_text">Extracted text</string>
+    <string name="document_tab_analysis">AI explanation</string>
+    <string name="document_no_text">No text was found in this document.</string>
+    <string name="document_explain">Explain this document</string>
+    <string name="document_explaining">Reading and explaining on this phone…</string>
+    <string name="document_analysis_saved">Explanation saved.</string>
+    <string name="document_no_analysis">No explanation has been generated yet.</string>
+    <string name="document_next_steps">Suggested next steps</string>
+    <string name="document_evidence">Based on</string>
+
+    <!-- Fact review -->
+    <string name="review_title">Review extracted items</string>
+    <string name="review_intro">HomeNurse found these items by reading your document. Check each one: confirm it, correct it, or reject it. Nothing is used before you confirm it.</string>
+    <string name="review_empty">No items were extracted from this document.</string>
+    <string name="review_pending_count">%1$d item(s) to review</string>
+    <string name="review_all_done">All items have been reviewed.</string>
+    <string name="review_source">From: \"%1$s\"</string>
+    <string name="review_confirm">Confirm</string>
+    <string name="review_edit">Edit</string>
+    <string name="review_reject">Reject</string>
+    <string name="review_confirm_edits">Save and confirm</string>
+    <string name="review_status_confirmed">Confirmed</string>
+    <string name="review_status_rejected">Rejected</string>
+    <string name="field_name">Name</string>
+    <string name="field_dose">Dose</string>
+    <string name="field_frequency">Frequency</string>
+    <string name="field_timing">Timing</string>
+    <string name="field_duration">Duration</string>
+    <string name="field_value">Value</string>
+    <string name="review_needs_verification">Needs verification</string>
+    <string name="review_source_manual">Added by you during review</string>
+    <string name="review_route">Route: %1$s</string>
+    <string name="review_instructions">Instructions: %1$s</string>
+    <string name="review_unit">Unit: %1$s</string>
+    <string name="review_reference">Reference range: %1$s</string>
+    <string name="review_add_title">Add an item yourself</string>
+    <string name="review_add_hint">If a document could not be read clearly, enter the information directly.</string>
+    <string name="review_add_confirm">Add item</string>
+    <string name="document_read_poor">Some information could not be read clearly. Check what was found carefully, correct anything wrong, or read the document again.</string>
+    <string name="document_read_failed">This document could not be read.</string>
+    <string name="document_read_no_text">No readable text was found on this document.</string>
+    <string name="document_retry_read">Read the document again</string>
+    <string name="documents_reading_page">Reading page %1$d of %2$d…</string>
+
+    <!-- Fact types -->
+    <string name="fact_patient_info">Patient information</string>
+    <string name="fact_medication">Medicine</string>
+    <string name="fact_lab">Lab result</string>
+    <string name="fact_condition">Condition</string>
+    <string name="fact_allergy">Allergy</string>
+    <string name="fact_instruction">Instruction</string>
+    <string name="fact_warning_signs">Warning signs</string>
+    <string name="fact_follow_up">Follow-up</string>
+    <string name="fact_procedure">Procedure</string>
+
+    <!-- Medicines -->
+    <string name="medicines_title">My medicines</string>
+    <string name="medicines_empty">No confirmed medicines yet. Add a prescription or discharge summary and confirm the medicines found in it.</string>
+    <string name="medicines_intro">Only medicines you confirmed from your own documents appear here. HomeNurse never suggests or changes doses.</string>
+    <string name="medicines_dose">Dose: %1$s</string>
+    <string name="medicines_frequency">Frequency: %1$s</string>
+    <string name="medicines_timing">Timing: %1$s</string>
+    <string name="medicines_duration">Duration: %1$s</string>
+    <string name="medicines_confirmed_badge">Confirmed by you</string>
+
+    <!-- Care plan -->
+    <string name="care_plan_title">Care plan</string>
+    <string name="care_plan_default_title">My care plan</string>
+    <string name="care_plan_empty">Your care plan is empty. Confirm medicines and follow-up items during a document review to build it.</string>
+    <string name="care_plan_add_task">Add task</string>
+    <string name="care_plan_task_label">Task</string>
+    <string name="care_plan_time_label">Reminder time (optional)</string>
+    <string name="care_plan_time_placeholder">HH:MM, e.g. 08:00</string>
+    <string name="care_plan_regenerate">Refresh from confirmed information</string>
+
+    <!-- Chat -->
+    <string name="chat_title">Ask HomeNurse</string>
+    <string name="chat_default_title">Ask HomeNurse</string>
+    <string name="chat_empty">Ask a question about your documents, medicines or care plan. Answers are generated on this phone.</string>
+    <string name="chat_input_hint">Type your question…</string>
+    <string name="chat_send">Send</string>
+    <string name="chat_stop">Stop generating</string>
+    <string name="chat_disclaimer">Answers come from a local AI model working only with your confirmed information. They are not a diagnosis — for medical decisions, talk to your doctor.</string>
+
+    <!-- AI errors -->
+    <string name="ai_model_not_ready">The local AI model is not ready yet. Finish the model setup first (see Settings).</string>
+    <string name="ai_malformed">The local model returned an answer HomeNurse could not read, so it was not shown. Please try again.</string>
+    <string name="ai_inference_error">The local AI could not answer right now. Please try again.</string>
+
+    <!-- Explain outcomes -->
+    <string name="explain_not_found">This document no longer exists.</string>
+    <string name="explain_needs_confirmation">Confirm at least one extracted item before asking for an explanation, so the AI only uses information you have verified.</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_model_section">Local AI model</string>
+    <string name="settings_model_version">Installed version: %1$s</string>
+    <string name="settings_delete_model">Delete model (frees storage)</string>
+    <string name="settings_storage_section">Storage</string>
+    <string name="settings_storage_documents">Documents (encrypted): %1$s</string>
+    <string name="settings_storage_model">AI model: %1$s</string>
+    <string name="settings_storage_total">Total: %1$s</string>
+    <string name="settings_notifications">Care reminders</string>
+    <string name="settings_notifications_hint">Remind me about confirmed care tasks. Reminder notifications never show medical details on the lock screen.</string>
+    <string name="settings_privacy_section">Privacy</string>
+    <string name="settings_privacy_body">All medical data — documents, extracted text, medicines, care plans and chat — is stored encrypted on this phone only. It is never uploaded, backed up to the cloud, or shared with analytics. The only network use is signing in, downloading/updating the AI model and checking for app updates.</string>
+    <string name="settings_privacy_stays_device">Your medical information stays on this device.</string>
+    <string name="settings_privacy_no_upload">HomeNurse does not send your medical documents to the model server.</string>
+    <string name="settings_privacy_offline">Once the AI model is installed, HomeNurse can work offline.</string>
+    <string name="settings_data_section">Your data</string>
+    <string name="settings_export">Export all data (JSON)</string>
+    <string name="settings_export_done">Export ready — choose where to save or share it.</string>
+    <string name="settings_delete_all">Delete local medical data</string>
+    <string name="settings_delete_all_title">Delete all medical data?</string>
+    <string name="settings_delete_all_message">This permanently deletes all documents, extracted items, medicines, care plans and chats from this phone. This cannot be undone. The downloaded AI model and your account are kept.</string>
+    <string name="settings_delete_all_done">All medical data was deleted from this phone.</string>
+    <string name="settings_about_section">About</string>
+    <string name="settings_about_body">HomeNurse %1$s — on-device healthcare assistant. Medical data stays on this phone.</string>
+
+    <!-- Account / session (authentication only — never medical data) -->
+    <string name="settings_account_section">Account</string>
+    <string name="settings_account_signed_in">Signed in as %1$s</string>
+    <string name="settings_account_email">Email: %1$s</string>
+    <string name="settings_account_provider_local">Sign-in method: username and password</string>
+    <string name="settings_account_provider_google">Sign-in method: Google</string>
+    <string name="settings_sign_out">Sign out</string>
+    <string name="settings_sign_out_title">Sign out of HomeNurse?</string>
+    <string name="settings_sign_out_message">Signing out clears your account session on this device. Your medical data stays on this phone — it is not deleted.</string>
+    <string name="settings_signed_out">Signed out. Your medical data is still on this device.</string>
+    <string name="settings_account_not_signed_in">Not signed in.</string>
+    <string name="settings_delete_account">Delete account</string>
+    <string name="settings_delete_account_explain">Deleting your HomeNurse account does not automatically delete medical information stored on this device.</string>
+    <string name="settings_delete_account_title">Delete your HomeNurse account?</string>
+    <string name="settings_delete_account_message">This removes your account and active sessions from the HomeNurse server. Medical information on this device is only removed if you separately choose “Delete local medical data”.</string>
+    <string name="settings_delete_account_password">Your password (leave empty for Google accounts)</string>
+    <string name="settings_delete_account_done">Your HomeNurse account was deleted. Local medical data was not touched.</string>
+    <string name="settings_licenses">Third-party licenses / AI model licenses</string>
+    <string name="settings_licenses_body">Open-source libraries and the Gemma model license notices.</string>
+
+    <!-- Errors -->
+    <string name="error_document_too_large">This file is too large (limit: 50 MB).</string>
+    <string name="error_storage">The file could not be stored on this device. Check available storage and try again.</string>
+    <string name="error_unknown">Something went wrong. Please try again.</string>
+
+    <!-- Reminders (content intentionally free of medical details) -->
+    <string name="reminder_title">HomeNurse</string>
+    <string name="reminder_single">A care task is due. Open HomeNurse to view it.</string>
+    <string name="reminder_multiple">You have %1$d care tasks due. Open HomeNurse to view them.</string>
+    <string name="reminder_channel_name">Care reminders</string>
+    <string name="reminder_channel_description">Reminders for your confirmed care tasks. Reminder notifications never show medical details.</string>
+    <!-- Authentication (username/password + Google). Account data only. -->
+    <string name="auth_title">HomeNurse</string>
+    <string name="auth_signin_title">Sign in</string>
+    <string name="auth_register_title">Create account</string>
+    <string name="auth_username_label">Username / Email</string>
+    <string name="auth_register_username_label">Username</string>
+    <string name="auth_email_label">Email</string>
+    <string name="auth_password_label">Password</string>
+    <string name="auth_password_hint">At least 8 characters</string>
+    <string name="auth_new_password_label">New password</string>
+    <string name="auth_sign_in_button">Sign In</string>
+    <string name="auth_register_button">Create account</string>
+    <string name="auth_forgot_password">Forgot password?</string>
+    <string name="auth_or">OR</string>
+    <string name="auth_google_button">Continue with Google</string>
+    <string name="auth_no_account">Don\'t have an account?</string>
+    <string name="auth_create_account_link">Create account</string>
+    <string name="auth_have_account">Already have an account?</string>
+    <string name="auth_signin_link">Sign in</string>
+    <string name="auth_register_body">Choose a username and password for your HomeNurse account. Your password is never stored in plain text, and no medical information is sent when you register.</string>
+    <string name="auth_forgot_title">Reset your password</string>
+    <string name="auth_forgot_body">Enter the email of your HomeNurse account. We will email you a single-use reset code. For your safety we will confirm the same way whether or not the email exists.</string>
+    <string name="auth_forgot_email_label">Email</string>
+    <string name="auth_forgot_send">Send reset code</string>
+    <string name="auth_forgot_sent">If that email has an account, a reset code is on its way.</string>
+    <string name="auth_reset_code_label">Reset code from email</string>
+    <string name="auth_reset_button">Reset password</string>
+    <string name="auth_reset_done">Your password was updated. You can sign in now.</string>
+    <string name="auth_signing_in">Signing in…</string>
+    <string name="auth_google_cancelled">Google sign-in was cancelled.</string>
+    <string name="auth_privacy_note">Your medical information stays on this device. Sign-in sends only your account details.</string>
+    <string name="auth_error_invalid_credentials">The username/email or password is incorrect.</string>
+    <string name="auth_error_username_taken">That username is already taken.</string>
+    <string name="auth_error_email_taken">That email is already registered.</string>
+    <string name="auth_error_weak_password">Choose a password with at least 8 characters that is not your username or email.</string>
+    <string name="auth_error_invalid_input">Check your details and try again.</string>
+    <string name="auth_error_rate_limited">Too many attempts. Please wait a few minutes and try again.</string>
+    <string name="auth_error_session_expired">Your session has expired. Please sign in again.</string>
+    <string name="auth_error_network">Check your internet connection and try again.</string>
+    <string name="auth_error_server">HomeNurse is temporarily unavailable. Please try again.</string>
+    <string name="auth_error_timeout">HomeNurse is taking too long to respond. Please try again.</string>
+    <string name="auth_error_google_unavailable">Google sign-in isn\'t available right now. You can sign in with your username and password instead.</string>
+    <string name="auth_error_google_invalid">Google sign-in could not be completed. Please try again.</string>
+    <string name="auth_error_unknown">Something went wrong. Please try again.</string>
+
+    <!-- Third-party / AI model licenses -->
+    <string name="licenses_title">Licenses</string>
+    <string name="licenses_gemma_section">Gemma model license</string>
+    <string name="licenses_gemma_body">HomeNurse distributes Google\'s Gemma model weights so the AI can run on this device. Gemma is provided under and subject to the Gemma Terms of Use, and its use is restricted by the Gemma Prohibited Use Policy. Recipients of the model receive these terms and the use restrictions that apply to Gemma. Google does not endorse HomeNurse.</string>
+    <string name="licenses_gemma_notice_label">Required Gemma notice (included with every model download)</string>
+    <string name="licenses_gemma_notice">Gemma is provided under and subject to the Gemma Terms of Use found at ai.google.dev/gemma/terms</string>
+    <string name="licenses_gemma_terms">Read the Gemma Terms of Use</string>
+    <string name="licenses_gemma_prohibited">Read the Gemma Prohibited Use Policy</string>
+    <string name="licenses_app_section">HomeNurse application</string>
+    <string name="licenses_app_body">HomeNurse is built with Kotlin, Jetpack Compose, AndroidX Room, SQLCipher, ML Kit text recognition and Google AI Edge LiteRT-LM, among other open-source libraries.</string>
+    <string name="licenses_open">Open</string>
+
+    <!-- Bottom navigation (4 tabs) -->
+    <string name="nav_plan">Plan</string>
+    <string name="nav_upload">Upload</string>
+
+    <!-- Design system: section labels and cards -->
+    <string name="section_label_style">Section label</string>
+    <string name="home_summary_label">Patient summary</string>
+    <string name="home_section_health">Health status</string>
+    <string name="home_section_plan">Today\'s care plan</string>
+    <string name="home_section_medicines">My medicines</string>
+    <string name="home_section_documents">Recent documents</string>
+    <string name="home_view_all">View all</string>
+    <string name="home_no_documents">No documents yet — take a photo or import a PDF.</string>
+    <string name="home_no_medicines">No confirmed medicines yet.</string>
+    <string name="home_no_open_tasks">Everything on today\'s plan is done.</string>
+    <string name="home_open_medicines">Medication details</string>
+    <string name="home_status_local_ai">Local AI</string>
+    <string name="home_status_documents">Documents waiting for review</string>
+    <string name="home_status_nothing">Nothing needs your attention.</string>
+    <string name="home_ask_title">Ask HomeNurse</string>
+    <string name="home_ask_body">Questions answered on this phone from your confirmed documents.</string>
+
+    <!-- Care plan / plan progress -->
+    <string name="care_plan_progress_title">Your recovery progress</string>
+    <string name="care_plan_progress_steps">%1$d of %2$d steps completed</string>
+    <string name="care_plan_section_timeline">Complete timeline steps</string>
+    <string name="care_plan_progress_empty">No steps yet — confirm medicines or follow-ups during a document review.</string>
+    <string name="care_plan_kind_medication">Medication</string>
+
+    <!-- Medication cards (doctor-provided, from your own documents) -->
+    <string name="medicines_source_badge">From your document</string>
+    <string name="medicines_doctor_block">Doctor\'s instructions</string>
+    <string name="medicines_purpose">Purpose: %1$s</string>
+    <string name="medicines_note_badge">HomeNurse note</string>
+
+    <!-- Document cards -->
+    <string name="documents_info">PDF, JPG and PNG are read entirely on this phone — text extraction never leaves your device.</string>
+    <string name="documents_zone_title">Add a medical document</string>
+    <string name="documents_zone_subtitle">Take a photo or import a PDF, prescription, lab report or discharge letter</string>
+    <string name="documents_section_files">Your documents</string>
+
+    <!-- Ask / AI responses -->
+    <string name="chat_subtitle">On-device AI</string>
+    <string name="chat_footer">Answers are generated on this phone from your confirmed documents.</string>
+    <string name="ai_badge_grounded">From your medical documents</string>
+    <string name="ai_badge_general">General medical information</string>
+    <string name="ai_badge_safety">Safety notice</string>
+    <string name="ai_warnings_label">Warnings</string>
+    <string name="ai_uncertainty_label">Uncertainty</string>
+    <string name="ai_doctor_label">Talk to your doctor</string>
+
+    <!-- Model setup card -->
+    <string name="onboarding_model_badge">Private on-device AI</string>
+    <string name="onboarding_model_card_title">HomeNurse AI</string>
+    <string name="onboarding_model_card_body">Your medical information stays on this device. The AI runs here — it is never sent anywhere.</string>
+    <string name="model_label_name">Model</string>
+    <string name="model_label_size">Download size</string>
+    <string name="model_label_storage">Required storage</string>
+    <string name="model_label_free">Free on this device</string>
+    <string name="model_label_ram">Recommended RAM</string>
+    <string name="model_stage_download">Download</string>
+    <string name="model_stage_verify">Verification (SHA-256)</string>
+    <string name="model_stage_init">Initialization</string>
+    <string name="model_stage_ready">Ready</string>
+    <string name="model_stage_pending">Waiting</string>
+
+    <!-- Plan / timeline detail -->
+    <string name="plan_step_medication_title">Medication instructions</string>
+    <string name="plan_step_doctor_instructions">Doctor\'s instructions</string>
+    <string name="plan_step_source_note">From your confirmed document</string>
+    <string name="plan_detail_error">This step could not be opened.</string>
+    <string name="plan_mark_done">Mark as done</string>
+    <string name="plan_mark_undone">Mark as not done</string>
+    <string name="plan_added_by_you">Added by you</string>
+    <string name="plan_completed_badge">Completed</string>
+
+    <!-- Medicines list -->
+    <string name="medicines_detail_title">Medication details</string>
+    <string name="medicines_detail_source">Source document</string>
+
+    <!-- Ask: question ideas and response provenance -->
+    <string name="chat_idea_1">What did my lab report say?</string>
+    <string name="chat_idea_2">How and when do I take this medicine?</string>
+    <string name="chat_idea_3">What are the warning signs I should watch for?</string>
+    <string name="chat_idea_4">What did the doctor tell me to do after discharge?</string>
+    <string name="ai_badge_doctor">Doctor instructions</string>
+    <string name="chat_footer_short">Generated privately on this device.</string>
+
+    <!-- Emergency / safety -->
+    <string name="safety_emergency_call">Call emergency number</string>
+    <string name="safety_emergency_calling">Opening the phone dialer…</string>
+
+    <!-- Verbatim doctor instructions from the confirmed document -->
+    <string name="doctor_instructions">Doctor\'s instructions</string>
+
+    <!-- Privacy statements (plain language) -->
+    <string name="privacy_stays_device">Your medical information stays on this device.</string>
+    <string name="privacy_model_download">HomeNurse downloads the AI model to your phone.</string>
+    <string name="privacy_no_documents_upload">HomeNurse does not send your medical documents to the model server.</string>
+    <string name="privacy_offline_after_install">Once the AI model is installed, HomeNurse can work offline.</string>
+</resources>
