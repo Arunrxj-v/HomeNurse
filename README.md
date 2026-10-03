@@ -25,11 +25,6 @@ HomeNurse helps users organize medical documents, medicines, care plans, and hea
 - Local OCR
 - On-device Gemma AI
 
-## 🧭 App
-
-**Home · Plan · Ask · Upload**
-
-Simple navigation focused on the things patients actually need.
 
 ## 🔒 Privacy
 
