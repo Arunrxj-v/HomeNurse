@@ -1,122 +1,46 @@
 # HomeNurse 🏥
 
-> A privacy-first, on-device healthcare companion for managing medical documents, medicines, care plans, and health questions.
+**A privacy-first, on-device healthcare companion for patients and families.**
 
-HomeNurse is a native Android healthcare application designed to help patients and families organize and understand their medical information in one place.
-
-The core principle of HomeNurse is **privacy by design**: sensitive medical information is processed and stored locally on the user's device wherever possible, while the backend is limited to services such as authentication and AI model distribution.
-
----
+HomeNurse helps users organize medical documents, medicines, care plans, and health questions — while keeping sensitive medical information on the device.
 
 ## ✨ Features
 
-### 📄 Medical Document Management
+- 📄 **Medical Documents** — Scan, import, and organize prescriptions, lab reports, and medical records.
+- 🔍 **Local OCR** — Extract information from medical documents directly on the device.
+- 💊 **Medicines & Care Plan** — Manage confirmed medicines, instructions, and follow-ups.
+- 🤖 **Ask HomeNurse** — Ask health-related questions using on-device AI and confirmed medical information.
+- 🔐 **Privacy First** — Medical documents, OCR data, and AI conversations stay local.
+- 📡 **Offline AI** — Local Gemma-based AI designed to work without sending medical data to the cloud.
 
-- Import medical documents from the device
-- Scan documents using the phone camera
-- Support prescriptions, lab reports, discharge summaries, and medical reports
-- Local OCR processing
-- Extract structured medical information from documents
-- Review extracted information before it becomes trusted
-- Keep original documents alongside extracted information
+## 🛠️ Tech Stack
 
-### 💊 Medicine Management
+- Kotlin
+- Jetpack Compose
+- Material 3
+- Room
+- Coroutines & Flow
+- CameraX
+- Android Credential Manager
+- Local OCR
+- On-device Gemma AI
 
-- Store confirmed medicines
-- Track dosage and frequency
-- View medication instructions
-- Associate medicines with their source documents
-- Clearly distinguish confirmed information from AI-generated explanations
+## 🧭 App
 
-### 📋 Care Plan
+**Home · Plan · Ask · Upload**
 
-- View confirmed care instructions
-- View upcoming medicines and care tasks
-- Organize follow-up instructions
-- Simple timeline-based presentation
-- No fabricated schedules or medical instructions
+Simple navigation focused on the things patients actually need.
 
-### 🤖 Ask HomeNurse
+## 🔒 Privacy
 
-HomeNurse includes an on-device AI assistant for questions about the user's medical information.
+HomeNurse is designed with a local-first architecture.
 
-The assistant can use confirmed information from the user's documents to provide contextual answers.
+Medical documents, OCR results, confirmed medical information, and AI conversations are processed/stored locally whenever possible.
 
-Examples:
+The backend is used for authentication and model distribution, not medical-data processing.
 
-- "What medicine do I take after dinner?"
-- "What did my doctor prescribe?"
-- "What does this lab result mean?"
-- "What are my documented allergies?"
+## 🚧 Status
 
-AI responses are designed to distinguish between:
+HomeNurse is currently under active development.
 
-- Information confirmed from the user's medical documents
-- General health information
-- Information that could not be determined from available data
-
-The application must never silently modify a diagnosis, dosage, allergy, prescription, or doctor's instruction.
-
-### 🔐 Privacy-First Architecture
-
-HomeNurse is designed around local processing.
-
-Sensitive medical information is intended to remain on the user's device, including:
-
-- Medical documents
-- OCR output
-- Extracted medical facts
-- Medicines
-- Diagnoses
-- Allergies
-- Care plans
-- AI conversations
-- AI prompts and responses
-
-The backend does **not** act as a medical-data processing service.
-
----
-
-# 🏗️ Architecture
-
-HomeNurse consists of two primary components:
-
-```text
-┌─────────────────────────────────────────────┐
-│              HomeNurse Android              │
-│                                             │
-│  Documents                                  │
-│      ↓                                      │
-│  Image Processing                           │
-│      ↓                                      │
-│  Local OCR                                  │
-│      ↓                                      │
-│  Fact Extraction                            │
-│      ↓                                      │
-│  User Review & Confirmation                 │
-│      ↓                                      │
-│  Trusted Medical Context                    │
-│      ↓                                      │
-│  Local AI / Gemma                           │
-│      ↓                                      │
-│  Safety / Response Engine                   │
-│                                             │
-│  Room + Encrypted Local Storage              │
-└──────────────────────┬──────────────────────┘
-                       │
-                       │ HTTPS
-                       │
-                       ▼
-┌─────────────────────────────────────────────┐
-│             HomeNurse Backend               │
-│                                             │
-│  Authentication                             │
-│  Google Sign-In                             │
-│  Password Reset                             │
-│  Session Management                          │
-│  AI Model Distribution                       │
-│  Model Manifest / Metadata                   │
-│                                             │
-│  No medical document processing              │
-│  No medical AI inference                     │
-└─────────────────────────────────────────────┘
+> Built to make personal healthcare information more private, accessible, and easier to understand.
